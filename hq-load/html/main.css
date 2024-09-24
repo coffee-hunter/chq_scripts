@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'LemonMilkLight';
+    src: url('fonts/LEMONMILK-Light.eot');
+    src: url('fonts/LEMONMILK-Light.eot#iefix') format('embedded-opentype'),
+        url('fonts/LEMONMILK-Light.woff2') format('woff2'),
+        url('fonts/LEMONMILK-Light.woff') format('woff'),
+        url('fonts/LEMONMILK-Light.ttf') format('truetype'),
+        url('fonts/LEMONMILK-Light.svg#svgFontName') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    color: #eee;
+    font-family: 'LemonMilkLight' !important;
+    font-size: 18px;
+    overflow: hidden;
+    grid-template-rows: 100px 600px;
+    grid-template-columns: 100px 800px;
+    grid-template-areas: 
+        infoBox infoBox2 infoBox2
+        infoBox3 infoBox3 infoBox3
+    ;
+    
+}
+
+.infoCon {
+    display: grid;
+    left: 0.5%;
+    /* background-color: white; */
+    width: 30%;
+    height: 1080px;
+    gap: 2px;
+}
+
+.infoBox {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.infoBox img {
+    position: absolute;
+    display: block;
+}
+
+.infoBox2 {
+    display: block;
+    position: relative;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 350px;
+    height: 100px;
+}
+
+.infoBox3 {
+    display: block;
+    position: relative;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 452px;
+    height: 950px;
+}
+
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+}
+
+.loadbar {
+    width: 25%;
+    background-color: rgba(105, 105, 105, 0.2);
+    height: 10px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 25%;
+
+    transform: translate(50%);
+}
+
+.progressBar {
+    width: 5%;
+    background-color: #25dfe6;
+    border-radius: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0%;
+}
+
+.footer {
+    width: 15%;
+    position: absolute;
+    margin: 0;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+
+}
